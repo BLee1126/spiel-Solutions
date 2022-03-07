@@ -1,0 +1,32 @@
+/* GRID CONTAINER */
+.pageContainer {
+  display: grid;
+  grid-template-columns: 50% 25%;
+  grid-template-rows: auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  padding: 1em;
+  /* height: 100vh; */
+  grid-template-areas: "script-body" "pages-modals";
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .pageContainer {
+    column-gap: 1em;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    overflow-y: scroll;
+
+    grid-template-areas:
+      "script-body ."
+      "pages-modals";
+  }
+}
+
+/* GRID ITEMS */
+.item-a {
+  grid-area: script-body;
+}
+.item-b {
+  grid-area: pages-modals;
+}

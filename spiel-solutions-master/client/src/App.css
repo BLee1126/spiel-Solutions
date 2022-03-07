@@ -1,0 +1,137 @@
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  text-align: center;
+  background-color: #c7cad5;
+  height: 100vh;
+  overflow-y: scroll;
+  background: rgb(245, 245, 245);
+  background: radial-gradient(
+    circle,
+    rgba(245, 245, 245, 0.3295693277310925) 0%,
+    rgba(199, 202, 213, 1) 98%
+  );
+}
+
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.editWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.editNavbar {
+  display: flex;
+  flex-direction: column;
+}
+.saveAndQuit {
+  background-color: aqua;
+  color: palevioletred;
+  border: solid 1px rgb(218, 208, 201);
+  position: relative;
+  border-radius: 50%;
+  font-size: xx-small;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+}
+.linked-from {
+  /* border: 1px solid black; */
+  /* display: flex; */
+  justify-content: center;
+  gap: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+.LinkForm {
+  display: flex;
+  flex-direction: column;
+}
+.NavCardLink {
+  text-decoration: none;
+}
+.nav {
+  gap: 2px;
+}
+.scriptCard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;
+  min-width: 200px;
+}
+.scriptDeleteBtn {
+  border: 0px solid;
+  background-color: rgb(175, 9, 9);
+  color: white;
+  max-width: 25%;
+  margin-bottom: 3px;
+}
+
+h1 {
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+#login {
+  color: darkblue;
+}
+
+#registration {
+  color: darkcyan;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+#form_box {
+  width: 40%;
+  border: 2px solid black;
+  padding: 1em;
+  background-color: darkblue;
+  color: white;
+  font-size: 80%;
+}
+
+#login_box {
+  width: 30%;
+  border: 2px solid black;
+  padding: 1em;
+  background-color: darkcyan;
+}
+
+.query {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.landing {
+  padding: 4em;
+}
